@@ -73,7 +73,7 @@ src/
 └── main.jsx      # Entrada de React
 ```
 
-La carpeta `Maquetacion/` es una referencia visual local y está excluida del repositorio mediante `.gitignore`. También se excluyen `node_modules/` y `dist/`.
+La carpeta `docs/` contiene referencias visuales locales y está excluida del repositorio mediante `.gitignore`. También se excluyen `node_modules/` y `dist/`.
 
 ## Licencia
 

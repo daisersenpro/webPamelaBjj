@@ -13,7 +13,7 @@ dist-ssr
 *.local
 
 # Referencia visual local, no forma parte de la aplicacion
-Maquetacion/
+docs/
 
 # Editor directories and files
 .vscode/*
