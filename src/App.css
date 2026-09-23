@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Shippori+Mincho:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
 
 :root { --bg:#090d16; --panel:#111827; --ink:#f1f4fb; --muted:#9ba6ba; --blue:#3478f6; --cyan:#6bd7f6; --green:#29d477; --line:rgba(205,220,255,.14); --soft-radius:16px; --max:1180px; }
 * { box-sizing:border-box; }
@@ -24,7 +24,7 @@ a { color:inherit; text-decoration:none; }
 .hero-copy { display:grid; gap:25px; padding-top:30px; }
 .eyebrow,.section-kicker,.program-tag { color:var(--cyan); font:500 11px/1 'DM Mono',monospace; letter-spacing:.12em; }
 h1,h2,h3,p,blockquote { margin:0; }
-h1,h2,h3 { font-family:'Noto Serif JP','Space Grotesk',sans-serif; line-height:1.12; }
+h1,h2,h3 { font-family:'Shippori Mincho',serif; line-height:1.12; font-weight:600; }
 h1 { max-width:630px; font-size:clamp(3.5rem,7vw,6.9rem); letter-spacing:-.07em; }
 h1 em,h2 em,blockquote em { color:var(--cyan); font-style:normal; }
 .hero-lead { max-width:495px; color:var(--muted); font-size:17px; line-height:1.7; }
