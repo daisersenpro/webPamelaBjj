@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#090d16"/>
-  <path d="M18 13h28l-7 20 10 18H15l10-18z" fill="#f1f4fb" stroke="#6bd7f6" stroke-width="2"/>
-  <path d="M21 29h22" stroke="#090d16" stroke-width="4"/>
-  <path d="M14 30h36v8H14z" fill="#050608" stroke="#b6373d" stroke-width="2"/>
-  <path d="M32 30v8" stroke="#d9dee8" stroke-width="2"/>
-  <text x="32" y="55" fill="#6bd7f6" font-family="Arial,sans-serif" font-size="8" font-weight="700" text-anchor="middle">PB</text>
-</svg>
