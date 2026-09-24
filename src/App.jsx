@@ -50,7 +50,7 @@ function App() {
   return (
     <div className="site-shell">
       <header className="site-header">
-        <a className="brand" href="#inicio" aria-label="PAMELA BJJ, inicio"><span className="brand-mark">PB</span><span>PAMELA <strong>BJJ</strong></span></a>
+        <a className="brand" href="#inicio" aria-label="Pamela BJJ, inicio"><img className="brand-logo" src="/images/LogoPameBjj.png" alt="Pamela BJJ" /></a>
         <nav className="desktop-nav" aria-label="Navegacion principal"><a href="#sobre-mi">Sobre mi</a><a href="#historia">Historia</a><a href="#bjj">¿Qué es BJJ?</a><a href="#clases">Clases</a><a href="#cinturones">Cinturones</a><a href="#contacto">Contacto</a></nav>
         <a className="button button-whatsapp button-small" href={whatsappLink(generalMessage)} target="_blank" rel="noreferrer"><span className="whatsapp-icon">◔</span> WhatsApp</a>
       </header>

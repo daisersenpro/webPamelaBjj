@@ -7,6 +7,7 @@ a { color:inherit; text-decoration:none; }
 .site-header { position:relative; z-index:5; display:flex; min-height:76px; align-items:center; justify-content:space-between; width:min(var(--max),calc(100% - 64px)); margin:auto; border-bottom:1px solid var(--line); }
 .brand { display:flex; align-items:center; gap:11px; color:var(--ink); font:700 15px/1 'Space Grotesk',sans-serif; letter-spacing:.04em; }
 .brand strong { color:var(--cyan); }
+.brand-logo { display:block; width:auto; height:42px; max-width:180px; object-fit:contain; }
 .brand-mark { display:grid; width:32px; height:32px; place-items:center; border:1px solid var(--cyan); border-radius:10px 3px 10px 3px; color:var(--cyan); font-size:10px; }
 .desktop-nav { display:flex; gap:32px; color:var(--muted); font:500 12px 'DM Mono',monospace; text-transform:uppercase; }
 .desktop-nav a:hover,.text-link:hover,.card-link:hover { color:var(--cyan); }
