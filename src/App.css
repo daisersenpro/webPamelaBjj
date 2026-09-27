@@ -928,6 +928,102 @@ blockquote {
 }
 
 /* ==========================================================================
+   05 / PREGUNTAS FRECUENTES (FAQ Rich Snippet Section)
+   ========================================================================== */
+.faq-section {
+  background: #0e1017;
+  border-top: 1px solid var(--line);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 24px;
+  margin-top: 10px;
+}
+
+.faq-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--soft-radius);
+  padding: 30px 28px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(229, 35, 39, 0.45);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35), 0 0 20px rgba(229, 35, 39, 0.1);
+}
+
+.faq-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.faq-tag {
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  padding: 4px 10px;
+  background: rgba(229, 35, 39, 0.1);
+  border: 1px solid rgba(229, 35, 39, 0.25);
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.faq-card-header h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.faq-answer {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.75;
+  margin: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  padding-top: 14px;
+}
+
+.faq-cta-bar {
+  margin-top: 48px;
+  background: linear-gradient(135deg, rgba(229, 35, 39, 0.08) 0%, rgba(20, 22, 34, 0.7) 100%);
+  border: 1px solid rgba(229, 35, 39, 0.25);
+  border-radius: var(--soft-radius);
+  padding: 26px 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.faq-cta-info strong {
+  display: block;
+  font-size: 16px;
+  color: var(--ink);
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.faq-cta-info p {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 0;
+}
+
+/* ==========================================================================
    06 / CONTACTO (Wix Split Layout)
    ========================================================================== */
 .contact-section {

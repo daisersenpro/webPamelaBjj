@@ -11,28 +11,51 @@ function whatsappLink(message) {
 const programs = [
   {
     tag: '01 / FUNDAMENTOS',
-    title: 'BJJ para Principiantes',
-    text: 'Aprende las bases con calma, seguridad y una guía técnica clara desde tu primera clase.',
-    features: ['Desde cero y sin experiencia previa', 'Técnicas de control y escape', 'Ambiente seguro y sin golpes'],
+    title: 'Clases de BJJ para Principiantes',
+    text: 'Aprende los fundamentos del Brazilian Jiu-Jitsu desde cero, con seguridad, pedagogía clara y sin golpes ni lesiones.',
+    features: ['Desde cero y sin experiencia previa', 'Técnicas de control, escape y defensa personal', 'Ambiente seguro, respetuoso y guiado'],
     action: 'Quiero comenzar',
     featured: false,
   },
   {
     tag: '02 / EXCLUSIVO',
     badge: 'MÁS SOLICITADO',
-    title: 'Clases 1 a 1',
-    text: 'Entrenamiento enfocado 100% en tus objetivos personales, tu ritmo y los detalles que quieres perfeccionar.',
-    features: ['Plan técnico individualizado', 'Horarios flexibles a convenir', 'Atención directa y corrección al detalle'],
+    title: 'Clases Particulares 1 a 1 de BJJ',
+    text: 'Entrenamiento individualizado enfocado al 100% en tus metas personales, ritmo y detalles técnicos finos.',
+    features: ['Plan técnico y pedagógico individualizado', 'Horarios flexibles a convenir en Santiago', 'Corrección al detalle y avance acelerado'],
     action: 'Consultar 1 a 1',
     featured: true,
   },
   {
     tag: '03 / COMUNIDAD',
-    title: 'Clases Grupales',
-    text: 'Técnica, movimiento corporal y sparring guiado en un equipo exigente, cercano y de gran respeto.',
-    features: ['Hombres y mujeres de todos los niveles', 'Desarrollo de resistencia y agilidad', 'Comunidad y compañerismo en el tatami'],
+    title: 'Clases Grupales de Brazilian Jiu-Jitsu',
+    text: 'Técnica, motricidad y sparring supervisado en un equipo exigente, motivador y con profundo respeto marcial.',
+    features: ['Hombres y mujeres de todos los niveles', 'Resistencia física, agilidad y reflejos', 'Excelente ambiente de compañerismo en el tatami'],
     action: 'Ver horarios',
     featured: false,
+  },
+]
+
+const faqs = [
+  {
+    question: '¿Cómo son las clases de Brazilian Jiu-Jitsu para principiantes?',
+    answer: 'Las clases de BJJ para principiantes están enfocadas en aprender las bases: posturas, caídas seguras, escapes y control posicional. Se enseña paso a paso en un ambiente seguro, controlado y sin golpes, ideal para personas sin ninguna experiencia marcial previa.',
+  },
+  {
+    question: '¿Necesito condición física o experiencia previa para tomar clases de BJJ?',
+    answer: 'No. No necesitas estar en forma para empezar; las clases de Brazilian Jiu-Jitsu te pondrán en forma. Desarrollarás resistencia cardiovascular, fuerza funcional, movilidad y flexibilidad de manera natural y progresiva a tu propio ritmo.',
+  },
+  {
+    question: '¿Qué necesito llevar para mi primera clase de Brazilian Jiu-Jitsu?',
+    answer: 'Para tu primera clase de prueba solo necesitas ropa deportiva cómoda (calzas o short deportivo sin cierres metálicos y polera) y una botella de agua. Si decides continuar, Pamela te orientará sobre cómo elegir tu kimono (gi) de BJJ.',
+  },
+  {
+    question: '¿Las clases de Brazilian Jiu-Jitsu son aptas para mujeres?',
+    answer: 'Absolutamente. El Brazilian Jiu-Jitsu es una de las disciplinas de defensa personal más recomendadas y efectivas para mujeres, ya que prioriza el uso de palancas biomecánicas, distribución de peso y técnica por sobre la fuerza física o el tamaño.',
+  },
+  {
+    question: '¿Cómo agendar una clase de prueba de BJJ en Chile?',
+    answer: 'Puedes agendar directamente haciendo clic en el botón de WhatsApp o completando el formulario al final de la página. Pamela responderá tus dudas personalmente y coordinarán el día y horario que mejor te acomode.',
   },
 ]
 
@@ -92,6 +115,7 @@ function App() {
             <a href="#bjj">¿Qué es BJJ?</a>
             <a href="#clases">Clases</a>
             <a href="#cinturones">Cinturones</a>
+            <a href="#faq">Preguntas</a>
             <a href="#contacto">Contacto</a>
           </nav>
           <a className="button button-whatsapp button-small" href={whatsappLink(generalMessage)} target="_blank" rel="noreferrer">
@@ -106,17 +130,17 @@ function App() {
             <div className="hero-copy">
               <div className="hero-status-pill">
                 <span className="status-dot"></span>
-                <span>Clases en Santiago, Chile · Abiertas para todos los niveles</span>
+                <span>Clases de Brazilian Jiu-Jitsu en Santiago, Chile · Todos los niveles</span>
               </div>
-              <h1>Entrena con <em>propósito.</em></h1>
+              <h1>Clases de <em>Brazilian Jiu-Jitsu</em> en Chile</h1>
               <p className="hero-lead">
-                Clases de Brazilian Jiu-Jitsu para hombres y mujeres que quieren aprender defensa, fortalecerse y descubrir el poder de la técnica y la constancia.
+                Aprende la disciplina y defensa personal del jiu-jitsu brasileño con técnica precisa, seguridad y atención cercana. Clases para principiantes desde cero, entrenamiento personalizado 1 a 1 y clases grupales en Santiago con la profesora Pamela Vargas Milla (Faixa Preta 2º Grau).
               </p>
               <div className="button-row">
-                <a className="button button-primary" href={whatsappLink('Hola, quiero agendar mi clase de prueba de BJJ.')} target="_blank" rel="noreferrer">
+                <a className="button button-primary" href={whatsappLink('Hola Pamela, quiero agendar mi clase de prueba de Brazilian Jiu-Jitsu.')} target="_blank" rel="noreferrer">
                   Agendar clase de prueba <span>↗</span>
                 </a>
-                <a className="button button-outline" href="#clases">Conocer las clases</a>
+                <a className="button button-outline" href="#clases">Ver opciones de clases</a>
               </div>
               <div className="hero-stats">
                 <div className="stat-card">
@@ -140,7 +164,7 @@ function App() {
               <div className="image-frame">
                 <img
                   src="/images/Pamela bjj Perfil.png"
-                  alt="Pamela Vargas Milla practicando Brazilian Jiu-Jitsu"
+                  alt="Clases de Brazilian Jiu-Jitsu en Chile con Pamela Vargas Milla Faixa Preta"
                   width="1142"
                   height="1377"
                   fetchPriority="high"
@@ -317,9 +341,9 @@ function App() {
         <section className="classes-section" id="clases">
           <div className="section-container">
             <div className="section-header">
-              <span className="section-badge">04 / PROGRAMAS DISPONIBLES</span>
-              <h2>Clases diseñadas para <em>cada etapa.</em></h2>
-              <p className="section-lead">Elige la modalidad que mejor se adapte a tus tiempos, objetivos y nivel de entrenamiento.</p>
+              <span className="section-badge">04 / CLASES DE BRAZILIAN JIU-JITSU</span>
+              <h2>Clases de BJJ diseñadas para <em>cada nivel.</em></h2>
+              <p className="section-lead">Elige la modalidad que mejor se adapte a tus objetivos: desde clases de BJJ para principiantes desde cero hasta clases particulares 1 a 1 en Santiago, Chile.</p>
               <div className="section-header-line"></div>
             </div>
 
@@ -392,13 +416,48 @@ function App() {
           </div>
         </section>
 
+        <section className="faq-section" id="faq">
+          <div className="section-container">
+            <div className="section-header">
+              <span className="section-badge">05 / PREGUNTAS FRECUENTES</span>
+              <h2>Todo sobre nuestras <em>clases de BJJ.</em></h2>
+              <p className="section-lead">
+                Resolvemos las dudas más habituales sobre las clases de Brazilian Jiu-Jitsu en Santiago, Chile: niveles, equipamiento y cómo empezar.
+              </p>
+              <div className="section-header-line"></div>
+            </div>
+
+            <div className="faq-grid">
+              {faqs.map((faq, index) => (
+                <article className="faq-card" key={index}>
+                  <div className="faq-card-header">
+                    <span className="faq-tag">0{index + 1}</span>
+                    <h3>{faq.question}</h3>
+                  </div>
+                  <p className="faq-answer">{faq.answer}</p>
+                </article>
+              ))}
+            </div>
+
+            <div className="faq-cta-bar">
+              <div className="faq-cta-info">
+                <strong>¿Tienes otra duda sobre las clases o los horarios?</strong>
+                <p>Escríbenos directamente por WhatsApp y te orientaremos en todo lo que necesites.</p>
+              </div>
+              <a className="button button-whatsapp button-small" href={whatsappLink('Hola Pamela, tengo una duda sobre las clases de Brazilian Jiu-Jitsu.')} target="_blank" rel="noreferrer">
+                <span className="whatsapp-icon">◔</span> Consultar por WhatsApp <span>↗</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
         <section className="contact-section" id="contacto">
           <div className="section-container contact-wrapper">
             <div className="contact-content">
-              <span className="section-badge">05 / COMENCEMOS</span>
+              <span className="section-badge">06 / COMENCEMOS</span>
               <h2>Tu primera clase<br /><em>empieza aquí.</em></h2>
               <p className="contact-lead">
-                Completa tus datos para coordinar tu clase de prueba o resolver cualquier duda directamente con Pamela por WhatsApp.
+                Completa tus datos para coordinar tu clase de prueba de Brazilian Jiu-Jitsu o resolver cualquier duda directamente con Pamela por WhatsApp.
               </p>
 
               <div className="contact-info-cards">
