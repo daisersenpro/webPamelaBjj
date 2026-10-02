@@ -107,10 +107,11 @@ function App() {
       <header className={`site-header ${isScrolled ? 'header-scrolled' : 'header-top'}`}>
         <div className="header-inner">
           <a className="brand" href="#inicio" aria-label="Pívot Pamela BJJ, inicio">
-            <img className="brand-logo" src="/images/2_Logo Pivot Transparente 2.png" alt="Pívot - Pamela BJJ" />
+            <img className="brand-logo" src="/FaviconLogoPivot.png" alt="Pívot - Pamela BJJ" />
           </a>
           <nav className="desktop-nav" aria-label="Navegación principal">
             <a href="#sobre-mi">Sobre mí</a>
+            <a href="#linaje">Linaje</a>
             <a href="#historia">Historia</a>
             <a href="#bjj">¿Qué es BJJ?</a>
             <a href="#clases">Clases</a>
@@ -241,6 +242,53 @@ function App() {
                     Ver perfil de Threads <span>↗</span>
                   </a>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="lineage-section" id="linaje">
+          <div className="section-container">
+            <div className="section-header">
+              <span className="section-badge">02 / LINAJE Y RESPALDO</span>
+              <h2>Una enseñanza con <em>raíces.</em></h2>
+              <p className="section-lead">
+                Pamela forma parte de Constrictors Jiu-Jitsu, equipo reconocido por Corpo &amp; Mente.
+              </p>
+              <div className="section-header-line"></div>
+            </div>
+
+            <div className="lineage-card">
+              <div className="lineage-image-wrap">
+                <img
+                  className="lineage-image"
+                  src="/humberto-7-grau.jpeg"
+                  alt="Humberto Tavares, Professor Faixa Preta 7º Grau de Corpo & Mente"
+                  loading="lazy"
+                />
+              </div>
+              <div className="lineage-copy">
+                <img
+                  className="lineage-logo"
+                  src="/1_Corpo E Mente Transparente.png"
+                  alt="Logo de Corpo & Mente Jiu-Jitsu"
+                  loading="lazy"
+                />
+                <span className="intro-card-badge">CORPO &amp; MENTE · BRASIL</span>
+                <h3>Professor Humberto Tavares</h3>
+                <p className="lineage-title">Faixa Preta 7º Grau · Criador de Equipe Corpo &amp; Mente</p>
+                <p>
+                  Pamela pertenece a una línea de formación respaldada por la experiencia de Humberto Tavares,
+                  referente brasileño y fundador de Equipe Corpo &amp; Mente.
+                </p>
+                <a
+                  className="button button-outline"
+                  href="https://equipecorpoemente.com.br/about/lideres.html"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Conocer a Corpo &amp; Mente <span>↗</span>
+                </a>
               </div>
             </div>
           </div>
@@ -578,7 +626,7 @@ function App() {
       <footer className="site-footer">
         <div className="footer-inner">
           <div className="footer-brand">
-            <img className="brand-logo" src="/images/2_Logo Pivot Transparente 2.png" alt="Pívot - Pamela BJJ" />
+            <img className="brand-logo" src="/FaviconLogoPivot.png" alt="Pívot - Pamela BJJ" />
             <div>
               <strong>PÍVOT · ACADEMIA DE BJJ</strong>
               <small>© {currentYear} · Pamela Vargas Milla · Entrena con propósito.</small>

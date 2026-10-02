@@ -550,7 +550,67 @@ h2 {
 }
 
 /* ==========================================================================
-   02 / HISTORIA
+   02 / LINAJE Y RESPALDO
+   ========================================================================== */
+.lineage-section {
+  background: linear-gradient(160deg, #0d1017 0%, #0c0d10 100%);
+  border-bottom: 1px solid var(--line);
+}
+.lineage-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) 1.2fr;
+  gap: 42px;
+  align-items: center;
+  padding: 28px;
+  background: #141622;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--card-radius);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
+}
+.lineage-image-wrap {
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid var(--line-strong);
+}
+.lineage-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center 28%;
+}
+.lineage-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.75;
+}
+.lineage-logo {
+  display: block;
+  width: 112px;
+  height: 112px;
+  object-fit: contain;
+  margin-bottom: 2px;
+}
+.lineage-copy h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 28px;
+}
+.lineage-copy p { margin: 0; }
+.lineage-title {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   03 / HISTORIA
    ========================================================================== */
 .story-section {
   background: linear-gradient(160deg, #13151f 0%, #0c0d10 100%);
@@ -1272,6 +1332,10 @@ blockquote {
   .story-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+  .lineage-card {
+    grid-template-columns: 1fr;
+    gap: 28px;
   }
   .discipline-grid,
   .program-grid {
