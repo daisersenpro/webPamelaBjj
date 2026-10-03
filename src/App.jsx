@@ -270,7 +270,7 @@ function App() {
               <div className="lineage-copy">
                 <img
                   className="lineage-logo"
-                  src="/1_Corpo E Mente Transparente.png"
+                  src="/1_Logo Corpo & Mente Transparente.png"
                   alt="Logo de Corpo & Mente Jiu-Jitsu"
                   loading="lazy"
                 />
